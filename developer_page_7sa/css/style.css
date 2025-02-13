@@ -1,5 +1,15 @@
+:root {
+    --blanco:#ffffff;
+    --oscuro:#212121;
+    --primario:#ffc107;
+    --secundario:#0097a7;
+    --gris:#757575;
+
+}
+
 html{
     font-size: 62.5%;
+    font-family: "Krub", serif;
 }
 body{
     font-size: 16px;
@@ -12,3 +22,37 @@ body{
 .titulo span {
     font-size: 2rem;
 }
+
+.navegacion-principal {
+    /* padding: 1rem; */
+    background-color: var(--secundario);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro)
+}
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+       
+    }
+}
+
