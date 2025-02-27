@@ -10,6 +10,25 @@
 html{
     font-size: 62.5%;
     font-family: "Krub", serif;
+    /* hack modelo de caja */
+    box-sizing: border-box;
+}
+/* para las seudoclases */
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+/* Tipografia */
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.2rem;
+}
+h1,h2,h3{
+    text-align: center;
 }
 body{
     font-size: 16px;
@@ -55,18 +74,48 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 450px;
+    position: relative;
 }
-.contenedor-hero{
-    display: flex;
-    
-    align-items: center;
-    justify-content: center;
 
+.contenido-hero{
+    position: absolute;
+    background-color: rgba(0,0,0,.7); 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ubicacion {
+    display: flex;
+    align-items: flex-end;
+}
+.boton{
+    /* color del fondo */
+    background-color: var(--secundario);
+    /* color de texto */
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    /* borde redondeado */
+    border-radius: .5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contenido-hero p,
+.contenido-hero h2{
+    color: var(--blanco);
 }
 @media (min-width: 768px) {
     .navegacion-principal{
         flex-direction: row;
-       
     }
+    
 }
+
 
