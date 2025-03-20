@@ -1,0 +1,25 @@
+tipo(conjuro,terror).
+tipo(avengers,accion).
+tipo(monja,suspenso).
+tipo(walle,romantica).
+
+
+duracion_min(conjuro,150).
+duracion_min(avengers,100).
+duracion_min(walle,80).
+duracion_min(monja,130).
+
+apto(conjuro,adulto).
+apto(avengers,todos).
+apto(monja,adulto).
+apto(walle,todos).
+
+
+%regla general
+peli(Pelicula,Genero) :-
+    apto(Pelicula,todos),tipo(Pelicula,Genero).
+
+%rela excepción
+peli_adultos(Pelicula,Tiempo):-
+    apto(Pelicula,adulto),duracion_min(Pelicula,Tiempo),
+  Tiempo >= 120.

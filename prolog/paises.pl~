@@ -1,0 +1,109 @@
+estado(aguascalientes).
+estado(baja_california).
+estado(baja_california_sur).
+estado(campeche).
+estado(coahuila).
+estado(colima).
+estado(chiapas).
+estado(chihuahua).
+estado(durango).
+estado(guanajuato).
+estado(guerrero).
+estado(hidalgo).
+estado(jalisco).
+estado(mexico).
+estado(michoacan).
+estado(morelos).
+estado(nayarit).
+estado(nuevo_leon).
+estado(oaxaca).
+estado(puebla).
+estado(queretaro).
+estado(quintana_roo).
+estado(san_luis_potosi).
+estado(sinaloa).
+estado(sonora).
+estado(tabasco).
+estado(tamaulipas).
+estado(tlaxcala).
+estado(veracruz).
+estado(yucatan).
+estado(zacatecas).
+
+capital(aguascalientes, aguascalientes).
+capital(baja_california, mexicali).
+capital(baja_california_sur, la_paz).
+capital(campeche, campeche).
+capital(coahuila, saltillo).
+capital(colima, colima).
+capital(chiapas, tuxla_gutierrez).
+capital(chihuahua, chihuahua).
+capital(durango, durango).
+capital(guanajuato, guanajuato).
+capital(guerrero, chilpancingo).
+capital(hidalgo, pachuca).
+capital(jalisco, guadalajara).
+capital(mexico, toluca).
+capital(michoacan, morelia).
+capital(morelos, cuernavaca).
+capital(nayarit, tepic).
+capital(nuevo_leon, monterrey).
+capital(oaxaca, oaxaca).
+capital(puebla, puebla).
+capital(queretaro, queretaro).
+capital(quintana_roo, chetumal).
+capital(san_luis_potosi, san_luis_potosi).
+capital(sinaloa, culiacan).
+capital(sonora, hermosillo).
+capital(tabasco, villahermosa).
+capital(tamaulipas, ciudad_victoria).
+capital(tlaxcala, tlaxcala).
+capital(veracruz, xalapa).
+capital(yucatan, merida).
+capital(zacatecas, zacatecas).
+
+
+
+
+
+
+
+
+
+mismo(Estado, Capital):-
+%    capital(Estado,Capital), Estado \= Capital.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mismo(Estado, Capital):-
+%    capital(Estado,Capital), Estado = Capital.
